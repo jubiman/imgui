@@ -28,6 +28,7 @@ target_include_directories(imgui PRIVATE
 target_link_libraries(imgui PRIVATE
     glfw
     ${Vulkan_LIBRARIES}
+    X11
 )
 
 target_include_directories(imgui PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
